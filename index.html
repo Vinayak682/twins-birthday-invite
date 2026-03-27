@@ -6,19 +6,14 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Veeraj &amp; Ayraa 🍭</title>
-
 <!-- Open Graph Meta Tags for WhatsApp Preview -->
-<meta property="og:title" content="You're Invited! Veeraj & Ayraa's Birthday Party 🎂🎉">
-<meta property="og:description" content="Join us for an unforgettable candy-themed birthday celebration! Tap to open your magical invitation ✨🍭">
+<meta property="og:title" content="You're Invited! 🎂 Veeraj &amp; Ayraa's First Birthday">
+<meta property="og:description" content="Join us for a magical candy-themed celebration! Tap to open your animated invitation ✨🍭">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://vinayak682.github.io/twins-birthday-invite/">
 <meta property="og:image" content="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&h=630&fit=crop">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Birthday Party Invitation for Veeraj and Ayraa">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="You're Invited! Veeraj & Ayraa's Birthday Party 🎂🎉">
-<meta name="twitter:description" content="Join us for an unforgettable candy-themed birthday celebration! Tap to open your magical invitation ✨🍭">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-in-1530103862676-de8c9debad1d?w=1200&h=630&fit=crop">
 <meta name="theme-color" content="#f9a8c9">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
 
@@ -66,7 +61,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(145deg, #ffe0f0 0%, #f5e8ff 40%, #e8f8ff 75%, #e0fff5 100%);
+  background: linear-gradient(145deg, #ffd6ec 0%, #efe0ff 35%, #d6f0ff 70%, #d4fff1 100%);
   font-family: 'QS', Arial, sans-serif;
   font-weight: 700;
   position: relative;
@@ -113,7 +108,7 @@ body {
   flex-direction: column;
   border-radius: 28px;
   overflow: hidden;
-  background: #fff9f5;
+  background: #fffcfa;
   box-shadow:
     0 0 0 3px #fff,
     0 0 0 7px #f9a8c9,
@@ -123,8 +118,9 @@ body {
   animation: cardIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 @keyframes cardIn {
-  from { opacity: 0; transform: scale(0.7) translateY(30px); }
-  to   { opacity: 1; transform: scale(1)   translateY(0); }
+  0%   { opacity: 0; transform: scale(0.8) translateY(32px); }
+  65%  { transform: scale(1.02) translateY(-5px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 
 /* shimmer sweep */
@@ -132,8 +128,8 @@ body {
   content: '';
   position: absolute; inset: 0; z-index: 300;
   pointer-events: none;
-  background: linear-gradient(110deg, transparent 25%, rgba(255,255,255,0.55) 50%, transparent 75%);
-  animation: sw 4s ease-in-out infinite;
+  background: linear-gradient(110deg, transparent 20%, rgba(255,255,255,0.65) 50%, transparent 80%);
+  animation: sw 2.6s ease-in-out infinite;
 }
 @keyframes sw {
   from { transform: translateX(-150%); }
@@ -148,9 +144,9 @@ body {
   justify-content: center;
   background: linear-gradient(90deg, #b8860b, #f7d96b, #ffe89a, #f7d96b, #b8860b);
   background-size: 300% 100%;
-  animation: gs 3s linear infinite;
+  animation: gs 2s linear infinite;
   font-family: 'Pac', cursive;
-  font-size: clamp(0.45rem, 1.5vw, 0.65rem);
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
   color: #3a1f08;
   letter-spacing: 0.8px;
   box-shadow: 0 3px 10px rgba(180, 130, 0, 0.35);
@@ -169,7 +165,7 @@ body {
   display: flex;
   gap: 8px;
   padding: 8px 10px 0;
-  background: linear-gradient(150deg, #fff0fa, #f5efff, #edfff8);
+  background: linear-gradient(150deg, #ffe8f6, #eee8ff, #e8fff6);
 }
 .pb { flex: 1; display: flex; flex-direction: column; min-width: 0; }
 .pframe {
@@ -187,12 +183,14 @@ body {
 .pframe.girl { animation: gg 3s ease-in-out infinite alternate; }
 .pframe.boy  { animation: gb 3s ease-in-out infinite alternate; }
 @keyframes gg {
-  from { box-shadow: 0 0 0 3px #f9a8c9; }
-  to   { box-shadow: 0 0 0 3px #e8638c, 0 6px 24px rgba(232,99,140,0.6), 0 0 16px rgba(249,168,201,0.5); }
+  0%   { box-shadow: 0 0 0 3px #f9a8c9; transform: rotate(-2deg) scale(1); }
+  50%  { box-shadow: 0 0 0 4px #e8638c, 0 8px 28px rgba(232,99,140,0.7); transform: rotate(2deg) scale(1.04); }
+  100% { box-shadow: 0 0 0 3px #f9a8c9; transform: rotate(-2deg) scale(1); }
 }
 @keyframes gb {
-  from { box-shadow: 0 0 0 3px #9de8c9; }
-  to   { box-shadow: 0 0 0 3px #4db6ac, 0 6px 24px rgba(77,182,172,0.6),  0 0 16px rgba(157,232,201,0.5); }
+  0%   { box-shadow: 0 0 0 3px #9de8c9; transform: rotate(2deg) scale(1); }
+  50%  { box-shadow: 0 0 0 4px #4db6ac, 0 8px 28px rgba(77,182,172,0.7); transform: rotate(-2deg) scale(1.04); }
+  100% { box-shadow: 0 0 0 3px #9de8c9; transform: rotate(2deg) scale(1); }
 }
 .badge {
   position: absolute; bottom: 7px; left: 50%;
@@ -201,7 +199,7 @@ body {
   border-radius: 50px;
   padding: 2px 10px 3px;
   font-family: 'Pac', cursive;
-  font-size: 0.48rem;
+  font-size: 0.68rem;
   white-space: nowrap;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   animation: bf 2.5s ease-in-out infinite alternate;
@@ -217,7 +215,7 @@ body {
   flex: 0 0 auto;
   text-align: center;
   font-family: 'Pac', cursive;
-  font-size: clamp(0.5rem, 1.4vw, 0.65rem);
+  font-size: clamp(0.65rem, 1.8vw, 0.8rem);
   padding: 5px 4px 5px;
   color: #fff;
   border-radius: 0 0 12px 12px;
@@ -244,7 +242,7 @@ body {
 /* corner emojis */
 .cn {
   position: absolute; z-index: 5; line-height: 1;
-  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+  font-size: clamp(1rem, 3.2vw, 1.3rem);
   animation: cp 2.2s ease-in-out infinite alternate;
 }
 .cn1 { top: 4px;  left: 4px;  animation-delay: 0s; }
@@ -257,7 +255,7 @@ body {
 }
 
 .topcandy {
-  font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
   line-height: 1;
   animation: tc 1.3s ease-in-out infinite alternate;
 }
@@ -268,7 +266,7 @@ body {
 
 .names {
   font-family: 'Pac', cursive;
-  font-size: clamp(1rem, 5.2vw, 1.65rem);
+  font-size: clamp(1.5rem, 7vw, 2.1rem);
   color: #3a1f08;
   text-align: center; line-height: 1.05;
   text-shadow: 2px 2px 0 rgba(232,99,140,0.18);
@@ -276,7 +274,7 @@ body {
 }
 .sub {
   font-family: 'DS', cursive;
-  font-size: clamp(0.78rem, 3.8vw, 1.1rem);
+  font-size: clamp(1rem, 4.8vw, 1.4rem);
   color: #e8638c;
   text-align: center;
   animation: fu 0.6s ease both 0.25s;
@@ -302,13 +300,13 @@ body {
 }
 .sweetxt {
   font-family: 'Pac', cursive;
-  font-size: clamp(1.1rem, 5.8vw, 1.75rem);
+  font-size: clamp(1.6rem, 7.5vw, 2.2rem);
   background: linear-gradient(135deg, #b07800, #f7d96b, #ffe8a0, #f7d96b, #b07800);
   background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gs 2.5s linear infinite;
+  animation: gs 1.8s linear infinite;
 }
 .swc {
   font-size: clamp(1rem, 3vw, 1.25rem);
@@ -323,7 +321,7 @@ body {
 /* info box */
 .info {
   width: 100%;
-  background: linear-gradient(140deg, #fce4ef, #ede4ff, #dffff3);
+  background: linear-gradient(140deg, #ffd6e8, #e8d6ff, #d6fff0);
   border: 1.5px dashed #f9a8c9;
   border-radius: 14px;
   padding: 8px 12px;
@@ -339,16 +337,16 @@ body {
   box-shadow: 0 2px 8px rgba(232,99,140,0.18);
 }
 .ilbl {
-  font-size: clamp(0.42rem, 1.2vw, 0.5rem);
+  font-size: clamp(0.58rem, 1.8vw, 0.7rem);
   color: #e8638c; text-transform: uppercase; letter-spacing: 1.3px; margin-bottom: 1px;
 }
 .ival {
-  font-size: clamp(0.68rem, 2vw, 0.8rem);
+  font-size: clamp(0.88rem, 3vw, 1.05rem);
   color: #3a1f08; line-height: 1.3;
 }
 .ival.date {
   font-family: 'Pac', cursive;
-  font-size: clamp(0.78rem, 2.5vw, 0.95rem);
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
   color: #e8638c; letter-spacing: 1.5px;
 }
 
@@ -361,7 +359,7 @@ body {
   animation: fu 0.6s ease both 0.85s;
 }
 .cdlbl {
-  font-size: clamp(0.38rem, 1.1vw, 0.46rem);
+  font-size: clamp(0.55rem, 1.5vw, 0.65rem);
   color: #d0b8c8;
   text-transform: uppercase; letter-spacing: 2px;
   text-align: center; margin-bottom: 5px;
@@ -376,10 +374,10 @@ body {
   text-align: center;
   animation: cb 1.7s ease-in-out infinite alternate;
 }
-.cdb:nth-child(1) { background: linear-gradient(150deg, #f06292, #ba68c8); animation-delay: 0s; }
-.cdb:nth-child(2) { background: linear-gradient(150deg, #ba68c8, #7986cb); animation-delay: 0.2s; }
-.cdb:nth-child(3) { background: linear-gradient(150deg, #7986cb, #4db6ac); animation-delay: 0.4s; }
-.cdb:nth-child(4) { background: linear-gradient(150deg, #4db6ac, #f9a825); animation-delay: 0.6s; }
+.cdb:nth-child(1) { background: linear-gradient(150deg, #f0387a, #b84dc8); animation-delay: 0s; }
+.cdb:nth-child(2) { background: linear-gradient(150deg, #b040c8, #5c6bc0); animation-delay: 0.2s; }
+.cdb:nth-child(3) { background: linear-gradient(150deg, #5460c8, #00a896); animation-delay: 0.4s; }
+.cdb:nth-child(4) { background: linear-gradient(150deg, #00a896, #f5a800); animation-delay: 0.6s; }
 @keyframes cb {
   from { transform: translateY(0);    box-shadow: 0 4px 12px rgba(0,0,0,0.18); }
   to   { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.24); }
@@ -389,7 +387,7 @@ body {
 .cdn {
   display: block;
   font-family: 'Pac', cursive;
-  font-size: clamp(1rem, 4.5vw, 1.3rem);
+  font-size: clamp(1.5rem, 6.5vw, 1.9rem);
   line-height: 1;
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
@@ -403,7 +401,7 @@ body {
 .cdu {
   display: block;
   font-family: 'QS', sans-serif; font-weight: 700;
-  font-size: clamp(0.36rem, 1vw, 0.44rem);
+  font-size: clamp(0.5rem, 1.4vw, 0.6rem);
   text-transform: uppercase; letter-spacing: 1px;
   color: #fff !important;
   -webkit-text-fill-color: #fff !important;
@@ -412,7 +410,7 @@ body {
 
 .foot {
   font-family: 'DS', cursive;
-  font-size: clamp(0.72rem, 3.5vw, 0.95rem);
+  font-size: clamp(1rem, 4.5vw, 1.3rem);
   color: #e8638c; text-align: center;
   animation: fu 0.6s ease both 1s;
 }
