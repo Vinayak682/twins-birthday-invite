@@ -6,9 +6,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Veeraj &amp; Ayraa 🍭</title>
-<!-- Open Graph Meta Tags for WhatsApp Preview -->
+<!-- Open Graph for WhatsApp -->
 <meta property="og:title" content="You're Invited! 🎂 Veeraj &amp; Ayraa's First Birthday">
-<meta property="og:description" content="Join us for a magical candy-themed celebration! Tap to open your animated invitation ✨🍭">
+<meta property="og:description" content="Join us for a magical candy-themed celebration! 08 April 2026 · Jamshedpur ✨🍭">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vinayak682.github.io/twins-birthday-invite/">
 <meta property="og:image" content="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&h=630&fit=crop">
@@ -419,6 +419,48 @@ body {
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* ══ ANIMATED DATE TILES (replaces countdown) ══ */
+.date-tiles {
+  display: flex; gap: 7px; justify-content: center;
+  margin-top: 6px;
+}
+.dtile {
+  flex: 1; max-width: 75px;
+  border-radius: 13px;
+  padding: 10px 4px 8px;
+  text-align: center;
+  animation: cb 1.7s ease-in-out infinite alternate;
+}
+.dtile:nth-child(1) { background: linear-gradient(150deg, #f0387a, #b84dc8); animation-delay: 0s; }
+.dtile:nth-child(2) { background: linear-gradient(150deg, #b040c8, #5c6bc0); animation-delay: 0.25s; }
+.dtile:nth-child(3) { background: linear-gradient(150deg, #5460c8, #00a896); animation-delay: 0.5s; }
+.dtn {
+  display: block;
+  font-family: 'Pac', cursive;
+  font-size: clamp(1.4rem, 6.5vw, 1.9rem);
+  line-height: 1; color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  background: none !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.28);
+  letter-spacing: 1px;
+}
+.dtu {
+  display: block;
+  font-family: 'QS', sans-serif; font-weight: 700;
+  font-size: clamp(0.48rem, 1.3vw, 0.58rem);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: rgba(255,255,255,0.92) !important;
+  -webkit-text-fill-color: rgba(255,255,255,0.92) !important;
+  margin-top: 4px;
+}
+.date-day-lbl {
+  text-align: center; margin-top: 8px;
+  font-family: 'DS', cursive;
+  font-size: clamp(0.82rem, 4vw, 1.05rem);
+  color: #e8638c;
+  animation: bf 2.5s ease-in-out infinite alternate;
+}
 </style>
 </head>
 <body>
@@ -492,25 +534,22 @@ body {
     </div>
 
     <div class="cd">
-      <div class="cdlbl">✨ counting down to the big day ✨</div>
-      <div class="cdrow">
-        <div class="cdb">
-          <span class="cdn" id="cD">--</span>
-          <span class="cdu">Days</span>
+      <div class="cdlbl">🎂 mark your calendar 🎂</div>
+      <div class="date-tiles">
+        <div class="dtile">
+          <span class="dtn">08</span>
+          <span class="dtu">April</span>
         </div>
-        <div class="cdb">
-          <span class="cdn" id="cH">--</span>
-          <span class="cdu">Hrs</span>
+        <div class="dtile">
+          <span class="dtn">2026</span>
+          <span class="dtu">Year</span>
         </div>
-        <div class="cdb">
-          <span class="cdn" id="cM">--</span>
-          <span class="cdu">Mins</span>
-        </div>
-        <div class="cdb">
-          <span class="cdn" id="cS">--</span>
-          <span class="cdu">Secs</span>
+        <div class="dtile">
+          <span class="dtn">Wed</span>
+          <span class="dtu">Day</span>
         </div>
       </div>
+      <div class="date-day-lbl">✨ Wednesday, 8th April 2026 ✨</div>
     </div>
 
     <div class="foot">Bring your sweet tooth! 🍰</div>
