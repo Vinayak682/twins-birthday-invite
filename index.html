@@ -6,6 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Veeraj &amp; Ayraa 🍭</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 
 <style>
 /* ═══ EMBEDDED FONTS — zero network dependency ═══ */
@@ -127,21 +128,42 @@ body {
 
 /* ═══ RIBBON — 8% of card ═══ */
 .ribbon {
-  flex: 0 0 8%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(90deg, #b8860b, #f7d96b, #ffe89a, #f7d96b, #b8860b);
-  background-size: 300% 100%;
-  animation: gs 3s linear infinite;
-  font-family: 'Pac', cursive;
-  font-size: clamp(0.45rem, 1.5vw, 0.65rem);
-  color: #3a1f08;
-  letter-spacing: 0.8px;
-  box-shadow: 0 3px 10px rgba(180, 130, 0, 0.35);
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 0 8px;
+  padding: 11px 18px 9px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(253,230,245,0.92) 0%, rgba(255,248,252,0.5) 100%);
+  border-bottom: 1px solid rgba(249,168,201,0.28);
+  animation: topbFade 1s ease both 0.15s;
+  position: relative;
+}
+@keyframes topbFade { from{opacity:0;transform:translateY(-10px)} to{opacity:1;transform:none} }
+.ribbon-ornament {
+  display: block;
+  font-size: 0.55rem;
+  letter-spacing: 7px;
+  color: #dba0c0;
+  margin-bottom: 3px;
+  animation: topbFade 1s ease both 0.3s;
+}
+.ribbon-date {
+  display: block;
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.05rem, 5vw, 1.35rem);
+  color: #7a3d65;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  animation: topbFade 1s ease both 0.45s;
+}
+.ribbon-city {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: clamp(0.48rem, 2vw, 0.58rem);
+  letter-spacing: 3.5px;
+  color: #b07898;
+  text-transform: uppercase;
+  margin-top: 3px;
+  animation: topbFade 1s ease both 0.6s;
 }
 @keyframes gs {
   from { background-position: 0%; }
@@ -396,7 +418,9 @@ body {
 <div class="card">
 
   <div class="ribbon">
-    🍭 &nbsp; Sweet One Turns One &nbsp;·&nbsp; 08 April 2026 &nbsp;·&nbsp; Jamshedpur &nbsp; 🍭
+    <span class="ribbon-ornament">✦ &nbsp; ✦ &nbsp; ✦</span>
+    <span class="ribbon-date">08 April 2026</span>
+    <span class="ribbon-city">Jamshedpur, Jharkhand</span>
   </div>
 
   <div class="photos">
